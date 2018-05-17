@@ -73,6 +73,8 @@ class Owner
   end
   
   def list_pets
-    @pets.each do |anmial
+    puts @pets[:fishes].length
+    puts @pets[:dogs].length
+    puts @pets[:cats].length
   end
 end
