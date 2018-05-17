@@ -5,7 +5,7 @@ class Owner
   
   def initialize(type)
     @type = type
-    @all << self
+    @@all << self
   end
   
   def self.all
