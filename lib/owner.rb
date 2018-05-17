@@ -28,4 +28,9 @@ class Owner
   def pets(pets={:fishes=>[], :dogs=>[], :cats=>[]})
     @pets = pets
   end
+  
+  def buy_fish
+    new_fish = Fish.new
+    @pets[:fishes] << new_fish
+  end
 end
