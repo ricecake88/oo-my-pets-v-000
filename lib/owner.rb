@@ -73,7 +73,7 @@ class Owner
   end
   
   def list_pets
-    puts @pets[:fishes].length
+    return  @pets[:fishes].length
     puts @pets[:dogs].length
     puts @pets[:cats].length
   end
