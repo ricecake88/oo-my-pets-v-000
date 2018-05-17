@@ -71,4 +71,8 @@ class Owner
     end
     @pets.clear
   end
+  
+  def list_pets
+    @pets.each do |anmial
+  end
 end
