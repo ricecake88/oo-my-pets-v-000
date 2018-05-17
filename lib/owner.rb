@@ -64,11 +64,11 @@ class Owner
   end
   
   def sell_pets
-    @pets.map do |animals, animalObjects|
+     nervous_pets = @pets.map do |animals, animalObjects|
       animalObjects.each do |animal|
         animal.mood = "nervous"
       end
     end
-    @pets
+    nervous_pets
   end
 end
