@@ -73,8 +73,9 @@ class Owner
   end
   
   def list_pets
-    return  @pets[:fishes].length
-    puts @pets[:dogs].length
-    puts @pets[:cats].length
+    str =  "I have #{@pets[:fishes].length} fish, "
+    str += "#{@pets[:dogs].length} dog(s), "
+    str += "and #{@pets[:cats].length} cat(s)."
+    return str
   end
 end
