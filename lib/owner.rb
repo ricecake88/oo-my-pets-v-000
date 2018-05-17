@@ -25,5 +25,5 @@ class Owner
     return "I am a #{@species}."
   end
 
-  def pets=({})
+  def pets=()
 end
