@@ -1,5 +1,8 @@
 class Owner
+  attr_accessor :type
+  
   @@all = []
+  
   def initialize(type)
     @type = type
     @all << self
