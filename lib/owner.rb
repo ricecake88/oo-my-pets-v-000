@@ -1,6 +1,7 @@
 class Owner
   @@all = []
-  def initialize
+  def initialize(type)
+    @type = type
     @all << self
   end
   
