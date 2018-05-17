@@ -35,6 +35,6 @@ class Owner
     new_fish = Fish.new(name)
     @pets[:fishes] << new_fish
     binding.pry
-    puts @pets[:fishes]
+    @pets
   end
 end
