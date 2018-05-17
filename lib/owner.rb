@@ -1,14 +1,14 @@
 require 'pry'
 class Owner
-  attr_accessor :name
-  attr_reader :species, :pets
+  attr_accessor :name, :pets
+  attr_reader :species
   
   @@all = []
   
   def initialize(species)
     @species = species
     @@all << self
-    @pets = {
+    @pets = {fishes: [], cats: [], dogs: []}
   end
   
   def self.all
@@ -27,11 +27,6 @@ class Owner
     return "I am a #{@species}."
   end
 
-  def pets(pets={:fishes=>[], :dogs=>[], :cats=>[]})
-    binding.pry
-    @pets = pets
-  end
-  
   def buy_fish(name)
     new_fish = Fish.new(name)
     @pets[:fishes] << new_fish
