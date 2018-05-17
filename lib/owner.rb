@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   attr_accessor :name
   attr_reader :species, :pets
@@ -26,12 +27,14 @@ class Owner
   end
 
   def pets(pets={:fishes=>[], :dogs=>[], :cats=>[]})
+    binding.pry
     @pets = pets
   end
   
   def buy_fish(name)
     new_fish = Fish.new(name)
     @pets[:fishes] << new_fish
+    binding.pry
     puts @pets[:fishes]
   end
 end
