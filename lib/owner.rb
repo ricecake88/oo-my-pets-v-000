@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :species
+  attr_reader :species
   
   @@all = []
   
@@ -20,7 +20,4 @@ class Owner
     @@all.clear
   end
   
-  def species
-    @species
-  end
 end
